@@ -8,5 +8,9 @@
     "marked": "^12.0.2",
     "vue": "^3.4.27",
     "vue-markdown": "^2.1.3"
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "vitepress": "^1.2.2"
   }
 }
