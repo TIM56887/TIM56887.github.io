@@ -1,9 +1,3 @@
-<script setup>
-  import Main from './components/Main.vue'
-
-</script>
-
-
 ## ■ 概述
 
 ## ■ 申請資格
