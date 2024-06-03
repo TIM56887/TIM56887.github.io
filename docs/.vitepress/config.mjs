@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // base:'/blog/',
-  title: "test",
-  description: "a test",
+  title: "Timmy",
+  description: "About Frontend",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -12,19 +12,19 @@ export default defineConfig({
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
-    // sidebar: [
-    //   {
-    //     text: 'Examples',
-    //     items: [
-    //       { text: 'Markdown Examples', link: '/markdown-examples' },
-    //       { text: 'Runtime API Examples', link: '/api-examples' }
-    //     ]
-    //   }
-    // ],
+    sidebar: [
+      {
+        text: 'Examples',
+        items: [
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      }
+    ],
     // aside:'left',
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/TIM56887' }
     ]
   }
 })
