@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base:'/tim56887.github.io/',
+  base:'/blog/',
   title: "test",
   description: "a test",
   themeConfig: {
