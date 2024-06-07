@@ -24,8 +24,10 @@ npx nuxi@latest init project-name
 cd 專案名稱
 npm run dev         
 ```
-- 開啟 http://localhost:3000/
-
+- 開啟 
+```js
+http://localhost:3000/
+```
 ## 安裝Vuetify
 - 點擊Nuxt開發工具 (再次點擊可關閉)
 ![result!](/asset/nuxtDevTool.png)
