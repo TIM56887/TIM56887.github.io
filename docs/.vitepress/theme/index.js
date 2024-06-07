@@ -1,8 +1,8 @@
 // https://vitepress.dev/guide/custom-theme
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-import AllPostLayout from './layouts/AllPostsLayout.vue'
 import './style.css'
+
 
 /** @type {import('vitepress').Theme} */
 export default {
@@ -14,6 +14,6 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
-    app.component('AllPostLayout', AllPostLayout)
+    
   }
 }

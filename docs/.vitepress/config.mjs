@@ -1,6 +1,8 @@
 import { defineConfig } from 'vitepress'
-
+import AllPosts from '../posts/AllPost'
 // https://vitepress.dev/reference/site-config
+import vue from '@vitejs/plugin-vue';
+
 export default defineConfig({
   // base:'/blog/',
   title: "Timmy",
@@ -9,16 +11,22 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Blog', link: '/all-posts' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+        text: 'vue',
+        items: AllPosts.map((item)=>{
+          return {
+            text: item,
+            link: `/posts/${item}`
+          }
+        })
+        // items: [
+        //   { text: 'Markdown Examples', link: '/markdown-examples' },
+        //   { text: 'Runtime API Examples', link: '/api-examples' }
+        // ]
       }
     ],
     // aside:'left',
@@ -26,5 +34,8 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/TIM56887' }
     ]
-  }
+  },
+  
+  
+  
 })

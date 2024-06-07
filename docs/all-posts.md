@@ -1,7 +1,9 @@
----
-layout: AllPostLayout
-title: All Posts
----
 
-# All Posts
+# All posts
+
+
+
+
+
+
 
