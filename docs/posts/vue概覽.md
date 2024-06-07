@@ -1,6 +1,11 @@
-# 笔记
+---
+next:
+  text: '如何在沒有nodejs的環境下使用vue vuetify開發'
+  link: '/posts/vue-vuetify-without-nodejs'
+---
+# vue概覽
 
-## 脚手架文件结构
+## vuecli 文件架構
 
     ├── node_modules
     ├── public
