@@ -1,5 +1,6 @@
 ---
 title: 'vue2概覽'
+order: 1
 next:
   text: '如何在沒有nodejs的環境下使用vue vuetify開發'
   link: '/posts/vue-vuetify-without-nodejs'
