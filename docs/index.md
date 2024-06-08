@@ -16,15 +16,15 @@ hero:
 
 features:
   - icon: 
-      src: docs/asset/icons-vuejs.png
+      src: /assets/icons-vuejs.png
     title: Vue Mastery
     details: Deep dives into Vue.js architecture and component design patterns.
   - icon: 
-      src: docs/asset/react.svg 
+      src: /assets/react.svg 
     title: React
     details: Case studies and breakdowns of real-world applications I've built with Vue.
   - icon:
-      src: docs/asset/svelte1.svg
+      src: /assets/svelte1.svg
     title: Svelte
     details: Tips and tricks for efficient frontend development with Vue.js.
   

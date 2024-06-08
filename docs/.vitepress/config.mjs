@@ -8,7 +8,7 @@ const vitepressSidebarOptions = {
 };
 
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/asset/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/assets/favicon.ico' }]],
   // base:'/blog/',
   title: "Timmy",
   description: "About Frontend",
