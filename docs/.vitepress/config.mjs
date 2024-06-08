@@ -1,9 +1,14 @@
 import { defineConfig } from 'vitepress'
-import AllPosts from '../posts/AllPost'
+// import AllPosts from '../posts/post.data.js'
 // https://vitepress.dev/reference/site-config
 import vue from '@vitejs/plugin-vue';
+import { generateSidebar } from 'vitepress-sidebar';
+const vitepressSidebarOptions = {
+  /* Options... */
+};
 
 export default defineConfig({
+  head: [['link', { rel: 'icon', href: '/asset/favicon.ico' }]],
   // base:'/blog/',
   title: "Timmy",
   description: "About Frontend",
@@ -13,29 +18,53 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Blog', link: '/all-posts' }
     ],
-
-    sidebar: [
-      {
-        text: 'vue',
-        items: AllPosts.map((item)=>{
-          return {
-            text: item,
-            link: `/posts/${item}`
-          }
-        })
-        // items: [
-        //   { text: 'Markdown Examples', link: '/markdown-examples' },
-        //   { text: 'Runtime API Examples', link: '/api-examples' }
-        // ]
-      }
-    ],
-    // aside:'left',
-
+    sidebar: generateSidebar({
+      documentRootPath: "/docs",
+      useTitleFromFileHeading: true,
+      useTitleFromFrontmatter: true,
+      // useFolderTitleFromIndexFile: true,
+      useFolderLinkFromIndexFile: true,
+      // hyphenToSpace: true,
+      // underscoreToSpace: true,
+      // capitalizeFirst: true,
+      // capitalizeEachWords: true,
+      collapsed: true,
+      collapseDepth: 2,
+      // sortMenusByName: false,
+      // sortMenusByFrontmatterOrder: false,
+      // sortMenusByFrontmatterDate: false,
+      // sortMenusOrderByDescending: false,
+      // sortMenusOrderNumericallyFromTitle: false,
+      // sortMenusOrderNumericallyFromLink: false,
+      // frontmatterOrderDefaultValue: 0,
+      // manualSortFileNameByPriority: ['first.md', 'second', 'third.md'],
+      // removePrefixAfterOrdering: false,
+      // prefixSeparator: '.',
+      // excludeFiles: ['first.md', 'secret.md'],
+      // excludeFilesByFrontmatter: false,
+      // excludeFolders: ['secret-folder'],
+      // includeDotFiles: false,
+      // includeRootIndexFile: false,
+      // includeFolderIndexFile: false,
+      // includeEmptyFolder: false,
+      // rootGroupText: 'Contents',
+      // rootGroupLink: 'https://github.com/jooy2',
+      // rootGroupCollapsed: false,
+      // convertSameNameSubFileToGroupIndexPage: false,
+      // folderLinkNotIncludesFileName: false,
+      // keepMarkdownSyntaxFromTitle: false,
+      // debugPrint: true,
+    }),
     socialLinks: [
       { icon: 'github', link: 'https://github.com/TIM56887' }
-    ]
+    ],
+    lastUpdated: {
+      text: "最後更新",
+      formatOptions: {
+        dateStyle: "medium",
+        timeStyle: "short",
+        forceLocale: true,
+      },
+    },
   },
-  
-  
-  
 })
