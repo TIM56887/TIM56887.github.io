@@ -9,7 +9,7 @@ const vitepressSidebarOptions = {
 
 export default defineConfig({
   ignoreDeadLinks: true,
-  head: ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+  head: [['link', { rel: 'icon',type: 'image/x-icon', href: '/favicon.ico' }]],
   // base:'/docs/',
   title: "Timmy",
   description: "About Frontend",
