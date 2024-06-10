@@ -1,5 +1,5 @@
 ---
-title: '如何在laravel中使用vue'
+title: 'Laravel與Vue合用的幾種方式'
 
 ---
 
