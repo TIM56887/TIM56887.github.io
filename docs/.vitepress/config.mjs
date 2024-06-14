@@ -30,7 +30,7 @@ export default defineConfig({
       capitalizeFirst: true,
       // capitalizeEachWords: true,
       collapsed: true,
-      collapseDepth: 2,
+      collapseDepth: 1,
       // sortMenusByName: false,
       // sortMenusByFrontmatterOrder: false,
       // sortMenusByFrontmatterDate: false,
