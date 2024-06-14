@@ -38,7 +38,7 @@ export default defineConfig({
       // sortMenusOrderNumericallyFromTitle: false,
       // sortMenusOrderNumericallyFromLink: false,
       // frontmatterOrderDefaultValue: 0,
-      // manualSortFileNameByPriority: ['first.md', 'second', 'third.md'],
+      manualSortFileNameByPriority: ['all-posts.md', 'vue相關', 'JS', 'git', '全套教學'],
       // removePrefixAfterOrdering: false,
       // prefixSeparator: '.',
       // excludeFiles: ['first.md', 'secret.md'],
