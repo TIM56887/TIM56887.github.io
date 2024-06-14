@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "vitepress": "^1.2.2",
+    "vitepress-sidebar": "^1.23.2"
+  },
+  "type": "module"
+}
