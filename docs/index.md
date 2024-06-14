@@ -22,11 +22,11 @@ features:
   - icon: 
       src: /react.svg 
     title: React
-    details: Case studies and breakdowns of real-world applications I've built with Vue.
+    details: ...和我一起學習React
   - icon:
       src: /svelte1.svg
     title: Svelte
-    details: Tips and tricks for efficient frontend development with Vue.js.
+    details: 我正在學習Svelte...
   
 
 aboutMe:

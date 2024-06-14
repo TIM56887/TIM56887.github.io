@@ -5,7 +5,7 @@ prev: false
 ---
 
 <script setup>
-  import { data as posts } from './vue-articles/post.data.js'
+  
   import { useData } from 'vitepress'
 
   let sidebar = useData().theme.getter().sidebar
