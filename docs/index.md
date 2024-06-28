@@ -1,11 +1,10 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
 hero:
   name: "Timmy"
-  text: "Frontend Developer from Taiwan"
-  tagline: "你好！ 這裡是我整理前端相關知識的地方"
+  text: "Frontend Developer \nin Taiwan"
+  tagline: "Something I use ..."
   actions:
     - theme: brand
       text: Explore Blog Posts
@@ -19,14 +18,27 @@ features:
       src: /icons-vuejs.png
     title: Vue Mastery
     details: Deep dives into Vue.js architecture and component design patterns.
+    link: https://vuejs.org/
+  - icon: 
+      src: /nuxt_logo.png
+    title: Nuxt
+    details: Currently using Nuxt.
+    link: https://nuxt.com/
+  - icon: 
+      src: /vuetify.png
+    title: Vuetify
+    details: Currently using Vuetify.
+    link: https://vuetifyjs.com/en/
   - icon: 
       src: /react.svg 
     title: React
     details: ...和我一起學習React
+    link: https://react.dev/
   - icon:
       src: /svelte1.svg
     title: Svelte
     details: 我正在學習Svelte...
+    link: https://svelte.dev/
   
 
 aboutMe:
@@ -36,5 +48,6 @@ aboutMe:
       link: https://twitter.com/yourTwitterHandle
     - platform: github
       link: https://github.com/yourGitHubHandle
+      
 ---
 
