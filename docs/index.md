@@ -6,8 +6,8 @@ hero:
   text: "Frontend Dev \nin Taiwan"
   tagline: "Something I use ..."
   image:
-    src: /vuetify.png
-    alt: react
+    src: /vuetify-logo-light-atom.svg
+    alt: vuetify
   actions:
     - theme: brand
       text: Explore Blog Posts
