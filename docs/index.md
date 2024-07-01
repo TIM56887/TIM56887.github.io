@@ -3,8 +3,11 @@
 layout: home
 hero:
   name: "Timmy"
-  text: "Frontend Developer \nin Taiwan"
+  text: "Frontend Dev \nin Taiwan"
   tagline: "Something I use ..."
+  image:
+    src: /vuetify.png
+    alt: react
   actions:
     - theme: brand
       text: Explore Blog Posts
