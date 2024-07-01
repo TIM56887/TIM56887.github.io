@@ -2,7 +2,7 @@
 title: 'Vuetify Component'
 ---
 # Some vuetify component I use
-## Navigation drawer
+## Navigation drawer with list group
 
 ![1683180258710](/asset/vuetify_component/navigation.png)
 ::: code-group
