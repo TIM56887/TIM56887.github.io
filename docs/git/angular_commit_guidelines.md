@@ -3,7 +3,7 @@
 
 Angular 專案使用了一套嚴格的提交訊息（commit message）格式，以確保提交紀錄的可讀性和一致性。這套規範基於 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 標準。以下是 Angular commit 規範的詳細介紹：
 
-## 為什麼需要 Commit 規範？
+## Commit 規範的好處
 
 1. **提高可讀性**：清晰的提交訊息使得每個變更的目的和內容一目了然，有助於開發者快速理解和定位問題。
 2. **方便協作**：統一的提交格式使得團隊成員之間的合作更加順暢，減少因提交訊息不一致帶來的困惑。
@@ -98,6 +98,9 @@ BREAKING CHANGE: The login endpoint now requires a valid JWT token.
 
 遵循 Angular commit 規範有助於保持提交歷史的整潔和一致性，並能自動生成變更日誌。透過這些規範，團隊可以更好地協作，並確保每個提交都是清晰且有意義的。
 
----
+## 一些我常用的限制commit規範相關套件：
+### [commitlint](https://commitlint.js.org/)
+> commitlint可以做到：如果沒有按照規定打commit message，再提交commit時就會直接抱錯
+
 
 
