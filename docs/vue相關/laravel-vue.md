@@ -16,7 +16,7 @@ title: 'Laravel與Vue合用的幾種方式'
 ::: tip 主要概念：
 1. 透過vite編譯.vue檔，然後生成js檔<br>
 2. 在blade檔中的`<script>`引入生成的js檔<br>
-3. blade被發送到瀏覽器，vue組件在前端被渲染
+3. blade渲染完成被發送到瀏覽器，vue組件在前端被渲染
 :::
 ::: warning 一些注意點：
 1. vue組件在客戶端才被渲染<br>

@@ -100,21 +100,21 @@
 
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #61DBFB 50%,
-    #41B883 50%
+    #61DBFB 30%,
+    #41B883 70%
   );
   --vp-home-hero-image-filter: blur(44px);
 }
 
 @media (min-width: 640px) {
   :root {
-    --vp-home-hero-image-filter: blur(56px);
+    --vp-home-hero-image-filter: blur(1px);
   }
 }
 
 @media (min-width: 960px) {
   :root {
-    --vp-home-hero-image-filter: blur(68px);
+    --vp-home-hero-image-filter: blur(1000px);
   }
 }
 
@@ -137,3 +137,18 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+.VPHero .VPImage {
+  animation: logo-spin infinite 20s linear;
+  top: auto;
+  left: auto;
+  width: 200px;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
