@@ -1,0 +1,19 @@
+{
+	"For Loop": {
+	  "prefix": ["ok", "for-const"],
+	  "body": [
+		"for (const ${2:element} of ${1:array}) {",
+		"\t$0",
+		"}"
+	  ],
+	  "description": "A for loop."
+	},
+	"Ok": {
+	  "prefix": "ok",
+	  "body": [
+		"console.log('OK');"
+	  ],
+	  "description": "Print OK to the console."
+	}
+  }
+  

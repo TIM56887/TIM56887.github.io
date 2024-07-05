@@ -23,12 +23,22 @@ features:
     details: Deep dives into Vue.js architecture and component design patterns.
     link: https://vuejs.org/
   - icon: 
+      src: /vue-router.png
+    title: Vue router
+    details: Currently using Vue router.
+    link: https://router.vuejs.org/
+  - icon: 
+      src: /pinia.svg
+    title: Pinia
+    details: Currently using Pinia.
+    link: https://pinia.vuejs.org/
+  - icon: 
       src: /nuxt_logo.png
     title: Nuxt
     details: Currently using Nuxt.
     link: https://nuxt.com/
   - icon: 
-      src: /vuetify.png
+      src: /vuetify-logo-light-atom.svg
     title: Vuetify
     details: Currently using Vuetify.
     link: https://vuetifyjs.com/en/
@@ -53,5 +63,4 @@ aboutMe:
       link: https://github.com/yourGitHubHandle
       
 ---
-
 
