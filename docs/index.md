@@ -19,7 +19,7 @@ hero:
 features:
   - icon: 
       src: /icons-vuejs.png
-    title: Vue Mastery
+    title: Vue 
     details: Deep dives into Vue.js architecture and component design patterns.
     link: https://vuejs.org/
   - icon: 
@@ -32,6 +32,11 @@ features:
     title: Pinia
     details: Currently using Pinia.
     link: https://pinia.vuejs.org/
+  - icon: 
+      src: /vueuse.svg
+    title: VueUse
+    details: Currently using VueUse.
+    link: https://vueuse.org/
   - icon: 
       src: /nuxt_logo.png
     title: Nuxt
