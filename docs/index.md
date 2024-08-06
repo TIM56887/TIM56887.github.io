@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Timmy"
   text: "Frontend Dev \nin Taiwan"
-  tagline: "Something I use ..."
+  tagline: "Things I am using ..."
   image:
     src: /vuetify-logo-light-atom.svg
     alt: vuetify
@@ -20,7 +20,7 @@ features:
   - icon: 
       src: /icons-vuejs.png
     title: Vue 
-    details: Deep dives into Vue.js architecture and component design patterns.
+    details: view!
     link: https://vuejs.org/
   - icon: 
       src: /vue-router.png
@@ -50,12 +50,12 @@ features:
   - icon: 
       src: /react.svg 
     title: React
-    details: ...和我一起學習React
+    details: ...還沒有學會React
     link: https://react.dev/
   - icon:
       src: /svelte1.svg
     title: Svelte
-    details: 我正在學習Svelte...
+    details: 也還沒有學會Svelte...
     link: https://svelte.dev/
   
 
