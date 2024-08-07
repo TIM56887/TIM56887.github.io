@@ -1,5 +1,5 @@
 ---
-title:v-data-table 在有使用headers props時，run build會報typescript錯：
+title:v-data-table 在有使用headers props時，run build會報typescript錯
 ---
 
 # v-data-table 在有使用headers props時，run build會報typescript錯：
@@ -30,5 +30,5 @@ const headers = ref([
 ] as const)
 ```
 
-### vuetify core team member的回覆:
+### 參考:
 https://github.com/vuetifyjs/vuetify/issues/18901
