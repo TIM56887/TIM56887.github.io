@@ -1,7 +1,7 @@
 ---
-title: 'Vuetify Component'
+title: '我常用的Vuetify Component'
 ---
-# 一些vuetify組件
+# 我常用的Vuetify Component
 
 ## 遞迴側邊欄
 ::: code-group
