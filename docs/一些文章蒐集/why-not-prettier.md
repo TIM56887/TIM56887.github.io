@@ -5,7 +5,7 @@ lang: en
 duration: 12min
 description: The reason why I don't use Prettier in my projects.
 ---
-
+# antfu 談到為什麼不要使用prettier
 [[toc]]
 
 > [中文 Chinese Version](/posts/why-not-prettier-zh)

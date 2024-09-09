@@ -10,70 +10,79 @@ title: TypeScript 型別宣告技巧
 > Pick 從型別中選擇某些屬性<br>
 > Omit 從型別中排除某些屬性 <br>
 ```typescript
-    interface User {
-        id: number;
-        name: string;
-        email: string;
-    }
-    // 將 User 型別的所有屬性變為可選的，Partial 是 TypeScript 2.1 新增的工具型別，用來將一個型別的所有屬性變為可選的。
-    type PartialUser = Partial<User>;
-    // 從 User 型別中選擇 name 和 email 屬性，Pick 是 TypeScript 2.1 新增的工具型別，用來從一個型別中選擇某些屬性。
-    type UserNameAndEmail = Pick<User, 'name' | 'email'>;
-    // 從 User 型別中排除 email 屬性，Omit 是 TypeScript 4.1 新增的工具型別，用來從一個型別中排除某些屬性。
-    type UserWithoutEmail = Omit<User, 'email'>;
+interface User {
+    id: number;
+    name: string;
+    email: string;
+}
+// 將 User 型別的所有屬性變為可選的，Partial 是 TypeScript 2.1 新增的工具型別，用來將一個型別的所有屬性變為可選的。
+type PartialUser = Partial<User>;
+// 從 User 型別中選擇 name 和 email 屬性，Pick 是 TypeScript 2.1 新增的工具型別，用來從一個型別中選擇某些屬性。
+type UserNameAndEmail = Pick<User, 'name' | 'email'>;
+// 從 User 型別中排除 email 屬性，Omit 是 TypeScript 4.1 新增的工具型別，用來從一個型別中排除某些屬性。
+type UserWithoutEmail = Omit<User, 'email'>;
 ```
 ## 2. `Extract` 
 > 從聯合型別中提取特定型別
 ```typescript
-    type UserInput = string | number | Date | string[];
-    type TextualInput = Extract<UserInput, string | string[]>;
+type UserInput = string | number | Date | string[];
+type TextualInput = Extract<UserInput, string | string[]>;
 
-    function handleText(input: TextualInput) {
-        console.log(`Handling text: ${input}`);
-    }
+function handleText(input: TextualInput) {
+    console.log(`Handling text: ${input}`);
+}
 
-    // 正確的用法
-    // 不會有 TypeScript 類型錯誤
-    handleText("Hello, world!");
-    handleText(["Hello", "world!"]);
+// 正確的用法
+// 不會有 TypeScript 類型錯誤
+handleText("Hello, world!");
+handleText(["Hello", "world!"]);
 
-    // 錯誤的用法
-    handleText(42); // TypeScript 類型錯誤
-    handleText(new Date()); // TypeScript 類型錯誤
+// 錯誤的用法
+handleText(42); // TypeScript 類型錯誤
+handleText(new Date()); // TypeScript 類型錯誤
 ```
 ## 3. `Exclude`
 > 從聯合型別中排除某些型別
 ```typescript
-    type UserInput = string | number | Date | string[];
-    type NonTextualInput = Exclude<UserInput, string | string[]>;
+type UserInput = string | number | Date | string[];
+type NonTextualInput = Exclude<UserInput, string | string[]>;
 
-    function handleNonText(input: NonTextualInput) {
-        console.log(`Handling non-textual input: ${input}`);
-    }
+function handleNonText(input: NonTextualInput) {
+    console.log(`Handling non-textual input: ${input}`);
+}
 ``` 
 ## 4. `readonly` 
 > 使屬性不可變
 ```typescript
-    interface User {
-        readonly id: number;
-        name: string;
-        email: string;
-    }
+interface User {
+    readonly id: number;
+    name: string;
+    email: string;
+}
 ```
 ## 5. `Record`
 > 將一個物件的key、value轉為一個型別的
 ```typescript
-    type User = {
-        id: number;
-        name: string;
-        email: string;
-    };
-    type UserRecord = Record<string, User>;
-    const users: UserRecord = {
-        "1": { id: 1, name: "John", email: "john@example.com" },
-        "2": { id: 2, name: "Jane", email: "jane@example.com" },
-    };
+type User = {
+    id: number;
+    name: string;
+    email: string;
+};
+type UserRecord = Record<string, User>;
+const users: UserRecord = {
+    "1": { id: 1, name: "John", email: "john@example.com" },
+    "2": { id: 2, name: "Jane", email: "jane@example.com" },
+};
 
+```
+## 6. `Creating types from values in array`
+> 限制一個變數的值必須在陣列中<br>
+> https://github.com/microsoft/TypeScript/issues/28046
+```typescript
+const animals = ['cat', 'dog', 'mouse'] as const
+type Animal = typeof animals[number]
+
+// type Animal = 'cat' | 'dog' | 'mouse'
 ```
 
 
