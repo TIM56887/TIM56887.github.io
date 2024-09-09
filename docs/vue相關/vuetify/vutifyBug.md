@@ -1,8 +1,8 @@
 ---
-title:v-data-table 在有使用headers props時，run build會報typescript錯
+title: 紀錄使用vuetify遇到的困難問題
 ---
 
-# v-data-table 在有使用headers props時，run build會報typescript錯：
+## v-data-table 在有使用headers props時，run build會報typescript錯：
 
 ```error
 Type '{ title: string; key: string; align: string; }[]' is not assignable to type 'readonly { readonly key?: "data-table-group" | "data-table-select" | "data-table-expand" | (string & {}); readonly value?: SelectItemKey<Record<string, any>>; ... 11 more ...; readonly children?: readonly any[]; }[] & readonly { ...; }[]'.
@@ -18,7 +18,7 @@ index.d.mts(21300, 9): The expected type comes from property 'headers' which is 
 }[]
 ```
 
-## 解法：
+### 解法：
 > 在headers加上as const
 ```ts
 const headers = ref([

@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Timmy"
   text: "Frontend Dev \nin Taiwan"
-  tagline: "Things I am using ..."
+  tagline: "我的技術部落格，最大的讀者是自己，消化自己的所學，鍛鍊自己的思考，涉獵更多技術，增加寫公司技術文件的能力，加速學習過程"
   image:
     src: /vuetify-logo-light-atom.svg
     alt: vuetify
@@ -15,12 +15,11 @@ hero:
     # - theme: alt
     #   text: View Projects
     #   link: /projects
-
 features:
   - icon: 
       src: /icons-vuejs.png
     title: Vue 
-    details: view!
+    details: view
     link: https://vuejs.org/
   - icon: 
       src: /vue-router.png
