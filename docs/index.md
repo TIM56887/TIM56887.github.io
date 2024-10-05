@@ -68,3 +68,56 @@ aboutMe:
       
 ---
 
+<script setup>
+  import { v4 as uuidv4 } from 'uuid';
+const log = {
+    Id: uuidv4(),
+    visitTime: new Date().toISOString(),
+    visitUrl: window.location.href,
+    userAgent: navigator.userAgent,
+    referrer: document.referrer,
+    language: navigator.language,
+    platform: navigator.platform,
+    screenResolution: `${window.screen.width}x${window.screen.height}`,
+    colorDepth: window.screen.colorDepth,
+    timezoneOffset: new Date().getTimezoneOffset(),
+    browserName: navigator.appName,
+    browserVersion: navigator.appVersion,
+    os: navigator.oscpu,
+    deviceMemory: navigator.deviceMemory,
+    hardwareConcurrency: navigator.hardwareConcurrency,
+    deviceType: navigator.userAgent.includes('Mobile') ? 'Mobile' : 'Desktop',
+    screenOrientation: window.screen.orientation.type,
+    networkInformation: {
+        effectiveType: navigator.connection.effectiveType,
+        rtt: navigator.connection.rtt,
+        downlink: navigator.connection.downlink,
+        saveData: navigator.connection.saveData,
+    },
+}
+try {
+fetch('https://a3zh2tapwj.execute-api.ap-northeast-1.amazonaws.com/visitLog', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(log),  // 將 log 轉為 JSON 字符串
+})
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        
+    })
+    .catch(error => {
+        
+    });
+} catch (error) {
+    
+}
+</script>
+
+
