@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Timmy"
   text: "Frontend Dev \nin Taiwan"
-  tagline: "我的技術部落格，最大的讀者是自己，消化自己的所學，鍛鍊自己的思考，涉獵更多技術，增加寫公司技術文件的能力，加速學習過程"
+  tagline: "紀錄前端開發日常，最大的讀者是自己，消化自己的所學，鍛鍊自己的思考，涉獵更多技術，增加寫技術文件的能力，加速學習過程"
   image:
     src: /vuetify-logo-light-atom.svg
     alt: vuetify
