@@ -3,10 +3,12 @@ title: Pinia storeToRefs()
 ---
 # Pinia storeToRefs()
 
-
-### `const countStore = useCountStore()`
-### 這種寫法每次使用時前面都要寫countStore.sum countStore.count countStore.add ，每次前面都要加上什麼點什麼，有沒有更精簡的寫法，像是能直接寫sum就好？
-### 有的，改成這樣就可以了 `const countStore = useCountStore()`
+### 一開始我使用pinia的時候常常會這樣寫
+ `const countStore = useCountStore()` 
+### 但這種寫法每次使用時，前面都要寫countStore.sum countStore.count countStore.add ，每次前面都要加上什麼點什麼，很麻煩。
+### 有沒有更精簡的寫法，能直接寫sum就好？
+### 有的！改成這樣就可以了 !
+`const countStore = storeToRefs(useCountStore())`
 
 - #### 使用storeToRefs就可以省略countStore
 ```js vue [script] {}
