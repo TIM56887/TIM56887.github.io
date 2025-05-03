@@ -61,7 +61,7 @@ interface User {
 }
 ```
 ## 5. `Record`
-> 將一個物件的key、value轉為一個型別的
+> 將一組 key 與 value 型別組合成一個物件型別。
 ```typescript
 type User = {
     id: number;
@@ -73,8 +73,8 @@ const users: UserRecord = {
     "1": { id: 1, name: "John", email: "john@example.com" },
     "2": { id: 2, name: "Jane", email: "jane@example.com" },
 };
-
 ```
+> Record<string, User> 表示這是一個物件，其所有的鍵（key）都是 string，而對應的值（value）都是 User 型別。
 ## 6. `Creating types from values in array`
 > 限制一個變數的值必須在陣列中<br>
 > https://github.com/microsoft/TypeScript/issues/28046
