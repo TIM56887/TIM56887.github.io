@@ -15,7 +15,7 @@ export default defineConfig({
     // ["meta", { name: "keywords", content: "TypeScript 型別, TypeScript 工具型別, Partial, Pick, Omit, Extract, Exclude, Record, Parameters, ReturnType, Awaited, TypeScript 型別宣告技巧" }]
   ],
   // base:'/docs/',
-  mpa: true,
+  // mpa: true,
   title: "Timmy",
   description: "About Frontend",
   themeConfig: {
