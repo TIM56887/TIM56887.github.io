@@ -1,9 +1,9 @@
 ---
-title: '我常用的Vuetify Component'
+title: 'Vuetify 遞歸側邊欄'
 ---
-# 我常用的Vuetify Component
+# Vuetify 遞歸側邊欄
 
-## 遞迴側邊欄
+## 遞歸側邊欄
 ::: code-group
 ```js vue [template]
 <template>
@@ -24,7 +24,7 @@ title: '我常用的Vuetify Component'
                     <template v-slot:activator="{ props }">
                         <v-list-item v-bind="props" :prepend-icon="item.icon" :title="item.title" />
                     </template>
-                    <Menu :menuList="item.children"></Menu>
+                    <Menu :menuList="item.children" />
                 </v-list-group>
             </template>
         </v-list>

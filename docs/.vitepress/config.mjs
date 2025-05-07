@@ -11,8 +11,11 @@ export default defineConfig({
   ignoreDeadLinks: true,
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    // ["meta", { name: "description", content: "實用的 TypeScript 型別工具與宣告技巧教學，包括 Partial、Pick、Omit、Extract、Exclude、Record、Parameters、ReturnType 等範例與用途說明。" }],
+    // ["meta", { name: "keywords", content: "TypeScript 型別, TypeScript 工具型別, Partial, Pick, Omit, Extract, Exclude, Record, Parameters, ReturnType, Awaited, TypeScript 型別宣告技巧" }]
   ],
   // base:'/docs/',
+  mpa: true,
   title: "Timmy",
   description: "About Frontend",
   themeConfig: {

@@ -1,10 +1,9 @@
 ---
-title: 'Tailwind CSS 使用指南'
+title: '關於Tailiwnd如何處理重複的樣式'
+description: '關於Tailiwnd如何處理重複的樣式'
 ---
 
-# Tailwind CSS
-
-
+# 關於Tailiwnd如何處理重複的樣式
 ## 當頁面有結構相同時，有大量的樣式需要重複使用時，該如何處理？
 
 ### 1.使用 `@apply` 指令可以做到

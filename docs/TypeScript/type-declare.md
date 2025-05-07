@@ -1,6 +1,3 @@
----
-title: TypeScript 型別宣告技巧
----
 # TypeScript 型別宣告技巧
 
 ### 當專案變大時，資料間的關係會變複雜，宣告型別的方式就會變得很重要，以下是一些型別宣告的技巧：
@@ -85,4 +82,36 @@ type Animal = typeof animals[number]
 // type Animal = 'cat' | 'dog' | 'mouse'
 ```
 
+## 7. `Parameters` 與 `ReturnType`
+> 提取函式的參數型別與返回型別
+>
+> 常見於套件沒有 export 型別時，可以用 `typeof` 搭配這兩個工具型別來提取型別資訊。
 
+### Parameters
+用來從函式型別中提取參數型別為一個 tuple：
+```ts
+function greet(name: string, age: number) {
+  return `Hello, ${name}, age ${age}`;
+}
+
+type GreetParams = Parameters<typeof greet>;
+// GreetParams = [string, number]
+```
+
+### ReturnType
+用來提取函式的返回值型別：
+```ts
+type GreetReturn = ReturnType<typeof greet>;
+// GreetReturn = string
+```
+
+### 搭配 async 函式
+如果函式是 `async`，可以使用 `Awaited` 解開 Promise：
+```ts
+async function fetchData(): Promise<number> {
+  return 42;
+}
+
+type Fetched = Awaited<ReturnType<typeof fetchData>>;
+// Fetched = number
+```

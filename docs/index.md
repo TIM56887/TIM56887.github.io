@@ -2,7 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:
-  name: "Timmy"
+  name: "Hi! I'm Tim"
   text: "Frontend Dev \nin Taiwan"
   tagline: "紀錄前端開發日常，最大的讀者是自己，消化自己的所學，鍛鍊自己的思考，涉獵更多技術，增加寫技術文件的能力，加速學習過程"
   image:
@@ -10,7 +10,7 @@ hero:
     alt: vuetify
   actions:
     - theme: brand
-      text: Explore Blog Posts
+      text: 查看文章
       link: /all-posts
     # - theme: alt
     #   text: View Projects

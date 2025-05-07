@@ -1,8 +1,8 @@
 ---
-title: 沒有node環境時，vue的模板要寫在哪裡?
+title: 沒有構建工具（如 Vite 或 Webpack）的情況下，vue的模板要寫在哪裡?
 ---
-# 在沒有node js環境時，vue的模板要寫在哪裡?
-## 可以寫在script標籤裡，type寫text/template，這樣瀏覽器不會抱錯也不會渲染。
+# 沒有構建工具（如 Vite 或 Webpack）的情況下，vue的模板要寫在哪裡?
+## 可以將模板寫在 `<script> 標籤中，並設定 type="text/template"，這樣瀏覽器不會解析也不會渲染這段內容`
 
 ```js vue [template]
 <script type="text/template" id="template">
